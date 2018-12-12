@@ -1,0 +1,42 @@
+.content-header {
+  display: flex;
+  width: 89%;
+  justify-content: space-between;
+}
+.hide,
+.men-button {
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+}
+
+ul li {
+  list-style: none;
+  line-height: 40px;
+  text-align: center;
+}
+
+.listitem {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background: #e0e0e0;
+  color: black;
+  padding: 10px;
+  text-align: left !important;
+  z-index: 1;
+}
+.listitem li:hover {
+  cursor: pointer;
+  color: green;
+}
+ul li:hover .listitem {
+  display: block;
+}
+/* ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+} */

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "./Store/Action";
+import "./data.css";
 
 class Data extends Component {
   constructor() {
@@ -15,10 +16,10 @@ class Data extends Component {
 
   render() {
     console.log(this.props);
-    let userList = this.props.fetch.map(item => {
+    let userList = this.props.fetch.map((item, i) => {
       console.log(item);
       return (
-        <div className="card">
+        <div key={i} className="card">
           <img src={item.photo.url} alt="Avatar" style={{ width: "100%" }} />
           <div className="container">
             <h4>

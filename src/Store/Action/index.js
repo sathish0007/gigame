@@ -1,3 +1,1 @@
-export {
-    fetchData
-} from './data'
+export { fetchData, filteredData, categoryData } from "./data";
