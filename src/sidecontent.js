@@ -82,13 +82,7 @@ class SideContent extends Component {
         <h2 className="search-text"> Search </h2>
         <div>
           <form>
-            <input type="text" />
-            <input
-              type="text"
-              id="ajax"
-              list="datalist"
-              placeholder="e.g. datalist"
-            />
+            <input type="text" list="datalist" placeholder="search product" />
             <datalist id="datalist">{datalistoption}</datalist>
           </form>
         </div>
