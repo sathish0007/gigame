@@ -4,10 +4,16 @@ import * as actions from "./Store/Action";
 import "./header.css";
 
 class Header extends Component {
+  state = {
+    category: ""
+  };
   queryData = data => {
     console.log(data);
     let url = "https://www.storenvy.com/search/products.json?category=mens";
     let catUrl = `${url}-${data}`;
+    this.setState({
+      category: data
+    });
     this.props.categoryData(catUrl);
   };
   render() {
@@ -33,6 +39,9 @@ class Header extends Component {
           <ul className="hide">
             <li>{filterHead}</li>
           </ul>
+        </div>
+        <div>
+          <h1>Mens -{this.state.category}</h1>
         </div>
         <div>
           <ul className="men-button">

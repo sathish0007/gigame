@@ -25,7 +25,7 @@ class Data extends Component {
             <h4>
               <b>{item.name}</b>
             </h4>
-            <p>Architect & Engineer</p>
+            <p>{item.store.name.toUpperCase()}</p>
           </div>
         </div>
       );
